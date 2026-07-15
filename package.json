@@ -29,7 +29,8 @@
     "build": "tsc",
     "test": "bun test ./test/config.test.ts",
     "typecheck": "tsc --noEmit",
-    "check": "bun run typecheck && bun run test"
+    "check": "bun run typecheck && bun run test",
+    "prepublishOnly": "bun run check"
   },
   "pi": {
     "extensions": [
@@ -37,7 +38,7 @@
     ]
   },
   "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "^0.80.7"
+    "@earendil-works/pi-coding-agent": ">=0.80.7"
   },
   "devDependencies": {
     "@earendil-works/pi-coding-agent": "^0.80.7",

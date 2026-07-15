@@ -16,13 +16,19 @@ If the configured model is unavailable or fails, the extension returns control t
 
 ## Install
 
-From GitHub:
+From npm:
+
+```bash
+pi install npm:pi-compaction-model
+```
+
+Or directly from GitHub:
 
 ```bash
 pi install git:github.com/JMHSV/pi-compaction-model
 ```
 
-Or clone it and add `local/pi-compaction-model` to `~/.pi/agent/settings.json`.
+You can also clone it and add `local/pi-compaction-model` to `~/.pi/agent/settings.json`.
 
 Restart Pi after installation, or use `/reload`.
 
